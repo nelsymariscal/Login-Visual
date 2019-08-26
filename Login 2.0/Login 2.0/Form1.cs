@@ -16,5 +16,25 @@ namespace Login_2._0
         {
             InitializeComponent();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+            this.Close();//Cierra el formulario
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (textbox_usuario.Text=="juancho" && textbox_salir.Text=="123tamarindo")
+            {
+
+            } 
+            else
+            {
+                MessageBox.Show("usuario o contraseña no válidas");
+                textbox_usuario.Text = "";
+                textbox_salir.Text = "";
+                textbox_usuario.Focus();
+            }
+        }
     }
 }
